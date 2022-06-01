@@ -4,7 +4,7 @@
 import math
 import numpy as np
 
-#format [calories, fat(gram), carb (g), protein (g)
+#format 	[calories, fat(gram), carb (g), protein (g)
 egg =       [78, 5, 1, 6] # 1 egg
 butter =    [102, 12, 0, 0] # 1 teaspoon 
 beef =      [291, 22, 0, 24] # 100 grams
@@ -16,11 +16,21 @@ salmon =    [182, 8, 0, 25] # 100 grams, Atlantic
 bacon =     [43, 4, 0, 4] # 1 slice, cooked
 avocado =   [160, 15, 9, 5] # 100 grams 
 mix_nuts =  [190, 10, 26, 2]
+shake = 	[150, 0, 0, 37]
+smoothie =  [330, 26, 9, 12]
+tuna =      [120, 1, 0, 30]
+yogurt = 	[100, 0, 7, 15]
+turkey =    [30, 1, 1, 6] # 1 slice 
+cauli_rice =[37, 0, 5, 2]
+pork_chops =[130, 4, 1, 23]
+salad_heavy = 	[400 ,24 , 6, 35] #avocado, bacon, cheese, greens, chicken, egg
+chia_pudding = [ 230, 15, 5, 8]
 
-egg_cal = egg[0]
+
+
 
 #total array of all food types: 
-array = np.array([egg, butter, beef, chicken, cheese, broccoli, olive_oil, salmon, bacon, avocado, mix_nuts])
+array = np.array([egg, butter, beef, chicken, cheese, broccoli, olive_oil, salmon, bacon, avocado, mix_nuts, shake, smoothie, tuna, yogurt, turkey, cauli_rice, pork_chops, salad_heavy, chia_pudding])
 c=0
 f=0
 cb=0
@@ -46,4 +56,23 @@ total_fat_needed = 157 #grams
 
 # TODO: Create an array of food lists for each day! this can be unique to your taste and will incorporate different weight of food intake 
 
-#Monday: 2 eggs, butter, chicken, bacon, avocado
+#Monday: 2 eggs, butter, cheese, chicken, broccoli, bacon, avocado
+monday_arr = np.array[egg, butter, chicken, cheese, broccolli, bacon, avocado]
+
+#Tuesday: 2 egg, ,avocado, vegetables, salmon, olive_oil, mix_nuts, smoothie
+tuesday_arr = np.array[ egg, avocado, salmon, olive_oil, mix_nits, smoothie]
+
+#Wednesday: Vegetable, 2 eggs, cheese, salad + 2 eggs, turkey, avocado, salmon
+wednesday_arr = np.array[smoothie, salad_heavy, salmon]
+
+#Thursday:  chia_pudding, butter, beef, celery, shake, avocado, turkey
+thursday_arr = np.array[ chia_pudding, butter, beef, shake, turkey, avocado]
+
+#Friday: smoothie, salmon, mushroom, salad, 
+friday_arr = np.array[smoothie, salmon, salad_heavy, 
+
+#saturday: mushroom, 2 eggs, tuna, chicken, broccoli, 
+saturday_arr = np.array[egg, tuna, cauli_rice, chicken, brocolli, shake]
+
+#sunday: cauliflower, bunless salmon burger, mearballs, zuchini noodles, cheese 
+sunday_arr = np.array[egg, salad_heavy, cauli_rice, chicken, smoothie]
