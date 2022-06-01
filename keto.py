@@ -53,26 +53,127 @@ total_carbs_needed = 24 #grams
 total_fat_needed = 157 #grams
 
 
-
+ 
 # TODO: Create an array of food lists for each day! this can be unique to your taste and will incorporate different weight of food intake 
 
 #Monday: 2 eggs, butter, cheese, chicken, broccoli, bacon, avocado
-monday_arr = np.array[egg, butter, chicken, cheese, broccolli, bacon, avocado]
+c_m=0
+f_m=0
+cb_m=0
+p_m=0
+monday_arr = np.array([egg, butter, chicken, cheese, broccoli, bacon, avocado])
+for element in monday_arr:
+	c_m += element[0]
+	f_m += element[1]
+	cb_m += element[2]
+	p_m += element[3]
+print('cal_monday: ' + str(c_m))
+print('fat_monday: ' + str(f_m))
+print('carbs_monday: ' + str(cb_m))
+print('protein_monday: ' + str(p_m))
+print('=============================')
 
 #Tuesday: 2 egg, ,avocado, vegetables, salmon, olive_oil, mix_nuts, smoothie
-tuesday_arr = np.array[ egg, avocado, salmon, olive_oil, mix_nits, smoothie]
+c_t=0
+f_t=0
+cb_t=0
+p_t=0
 
-#Wednesday: Vegetable, 2 eggs, cheese, salad + 2 eggs, turkey, avocado, salmon
-wednesday_arr = np.array[smoothie, salad_heavy, salmon]
+tuesday_arr = np.array([ egg, avocado, salmon, olive_oil, mix_nuts, smoothie])
+for element in tuesday_arr:
+	c_t += element[0]
+	f_t += element[1]
+	cb_t += element[2]
+	p_t += element[3]
+print('cal_tuesday: ' + str(c_t))
+print('fat_tuesday: ' + str(f_t))
+print('carbs_tuesday: ' + str(cb_t))
+print('protein_tuesday: ' + str(p_t))
+print('=============================')
+
+#Wednesday: Vegetable, 2 eggs, cheese, salad + 2 eggs, turkey, avocado, salmon) 
+c_w=0
+f_w=0
+cb_w=0
+p_w=0
+wednesday_arr = np.array([smoothie, salad_heavy, salmon])
+for element in monday_arr:
+	c_w += element[0]
+	f_w += element[1]
+	cb_w += element[2]
+	p_w += element[3]
+print('cal_wed: ' + str(c_w))
+print('fat_wed: ' + str(f_w))
+print('carbs_wed: ' + str(cb_w))
+print('protein_wed: ' + str(p_w))
+print('=============================')
 
 #Thursday:  chia_pudding, butter, beef, celery, shake, avocado, turkey
-thursday_arr = np.array[ chia_pudding, butter, beef, shake, turkey, avocado]
+c_th=0
+f_th=0
+cb_th=0
+p_th=0
+thursday_arr = np.array([chia_pudding, butter, beef, shake, turkey, avocado])
+for element in thursday_arr:
+	c_th += element[0]
+	f_th += element[1]
+	cb_th += element[2]
+	p_th += element[3]
+print('cal_thursday: ' + str(c_th))
+print('fat_thursday: ' + str(f_th))
+print('carbs_thursday: ' + str(cb_th))
+print('protein_thursday: ' + str(p_th))
+print('=============================')
+#Friday: smoothie, salmon, mushroom, salad,
+c_f=0
+f_f=0
+cb_f=0
+p_f=0
 
-#Friday: smoothie, salmon, mushroom, salad, 
-friday_arr = np.array[smoothie, salmon, salad_heavy, 
+friday_arr = np.array([smoothie, salmon, salad_heavy])
 
+for element in friday_arr:
+	c_f += element[0]
+	f_f += element[1]
+	cb_f += element[2]
+	p_f += element[3]
+print('cal_friday: ' + str(c_f))
+print('fat_friday: ' + str(f_f))
+print('carbs_friday: ' + str(cb_f))
+print('protein_friday: ' + str(p_f))
+print('=============================')
 #saturday: mushroom, 2 eggs, tuna, chicken, broccoli, 
-saturday_arr = np.array[egg, tuna, cauli_rice, chicken, brocolli, shake]
+c_s=0
+f_s=0
+cb_s=0
+p_s=0
 
+saturday_arr = np.array([egg, tuna, cauli_rice, chicken, broccoli, shake])
+
+for element in saturday_arr:
+	c_s += element[0]
+	f_s += element[1]
+	cb_s += element[2]
+	p_s += element[3]
+print('cal_saturday: ' + str(c_s))
+print('fat_saturday: ' + str(f_s))
+print('carbs_saturday: ' + str(cb_s))
+print('protein_saturday: ' + str(p_s))
+print('=============================')
 #sunday: cauliflower, bunless salmon burger, mearballs, zuchini noodles, cheese 
-sunday_arr = np.array[egg, salad_heavy, cauli_rice, chicken, smoothie]
+c_sun=0
+f_sun=0
+cb_sun=0
+p_sun=0
+
+sunday_arr = np.array([egg, salad_heavy, cauli_rice, chicken, smoothie])
+for element in sunday_arr:
+	c_sun += element[0]
+	f_sun += element[1]
+	cb_sun += element[2]
+	p_sun += element[3]
+print('cal_sunday: ' + str(c_sun))
+print('fat_sunday: ' + str(f_sun))
+print('carbs_sunday: ' + str(cb_sun))
+print('protein_sunday: ' + str(p_sun))
+print('=============================')
