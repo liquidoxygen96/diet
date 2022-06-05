@@ -177,3 +177,8 @@ print('fat_sunday: ' + str(f_sun))
 print('carbs_sunday: ' + str(cb_sun))
 print('protein_sunday: ' + str(p_sun))
 print('=============================')
+
+
+	
+
+		
